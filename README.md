@@ -6,7 +6,7 @@ HexDump::Tiny
 Synopsis
 ========
 
-    #!/usr/bin/env perl6
+    #!/usr/bin/env raku
 
     use HexDump::Tiny;
 
