@@ -12,7 +12,7 @@
         "HexDump::Tiny" : "lib/HexDump/Tiny.pm"
     },
     "repo-type" : "git",
-    "source-url" : "git://github.com/perlpilot/p6-HexDump-Tiny.git",
+    "source-url" : "git://github.com/raku-community-modules/HexDump-Tiny.git",
     "author" : "Jonathan Scott Duff"
 }
 
