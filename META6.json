@@ -16,7 +16,10 @@
   "resources": [
   ],
   "source-url": "git://github.com/raku-community-modules/HexDump-Tiny.git",
-  "tags": [ "HEX", "HEXDUMP", "UTILITY"
+  "tags": [
+    "HEX",
+    "HEXDUMP",
+    "UTILITY"
   ],
   "test-depends": [
   ],
