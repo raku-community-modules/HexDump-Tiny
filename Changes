@@ -2,5 +2,8 @@ Revision history for HexDump-Tiny
 
 {{$NEXT}}
 
+0.3  2022-02-19T12:51:58+01:00
+    - Add "hd" CLI for easy hexdumping
+
 0.2  2022-02-19T12:09:27+01:00
     - First version in zef ecosystem

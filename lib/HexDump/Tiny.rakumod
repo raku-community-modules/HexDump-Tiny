@@ -1,3 +1,5 @@
+unit module HexDump::Tiny:ver<0.3>:auth<zef:raku-community-modules>;
+
 sub hexdump($value, :$chunk-size = 16) is export {
     $value.comb.batch($chunk-size, :partial).kv.map: -> $k, @v {
         my $hex := @v.map( -> $a, $b? {

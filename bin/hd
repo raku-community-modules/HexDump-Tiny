@@ -1,0 +1,26 @@
+use HexDump::Tiny:ver<0.3>:auth<zef:raku-community-modules>;
+
+subset File of Str where { .IO.f };
+
+multi sub MAIN(File $file) {
+    .say for hexdump slurp $file;
+}
+
+multi sub MAIN(*@strings) {
+    .say for hexdump @strings.join(" ");
+}
+
+#| slurp from STDIN
+multi sub MAIN() {
+    .say for hexdump slurp;
+}
+
+multi sub MAIN(Bool :$help!) is hidden-from-USAGE {
+    MAIN("help")
+}
+multi sub MAIN("help") is hidden-from-USAGE {
+    say "Provide a hexadecimal dump (v{ HexDump::Tiny.^ver }):";
+    say $*USAGE
+}
+
+# vim: expandtab shiftwidth=4
