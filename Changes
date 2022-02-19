@@ -2,6 +2,10 @@ Revision history for HexDump-Tiny
 
 {{$NEXT}}
 
+0.5  2022-02-19T18:54:04+01:00
+    - Accept Blob as input as well
+    - Adapt slurping in hd to :bin for performance
+
 0.4  2022-02-19T18:21:40+01:00
     - Make sure we handle NFG correctly
     - Show newline as ␤ and unprintables as ⋅ for better readability

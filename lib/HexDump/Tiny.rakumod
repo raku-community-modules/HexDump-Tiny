@@ -1,7 +1,13 @@
-unit module HexDump::Tiny:ver<0.4>:auth<zef:raku-community-modules>;
+unit module HexDump::Tiny:ver<0.5>:auth<zef:raku-community-modules>;
 
-sub hexdump($value, :$chunk-size = 16) is export {
-    $value.encode.batch($chunk-size).kv.map: -> $k, @v {
+proto sub hexdump(|) is export {*}
+
+multi sub hexdump(Str() $string, *%_) {
+    hexdump $string.encode, |%_
+}
+
+multi sub hexdump(Blob:D $blob, :$chunk-size = 16) {
+    $blob.batch($chunk-size).kv.map: -> $k, @v {
         my $hex := @v.map(@v.elems %% 2
           ?? -> $a, $b  { sprintf("%02x%02x", $a, $b) }
           !! -> $a, $b? {
@@ -40,10 +46,11 @@ use HexDump::Tiny;
 
 HexDump::Tiny is module that exports a single subroutine C<hexdump>.
 
-It takes a value of which to create a hexadecimal dump, and an
-optional named argument C<:chunk-size> to indicate the number of
-bytes to be grouped (default: 16).  It returns a list of hexdump
-lines.
+It takes a value of which to create a hexadecimal dump (either as
+a C<Blob> or C<Buf> or as anything else that can be coerced to a
+C<Str>), and an optional named argument C<:chunk-size> to indicate
+the number of bytes to be grouped (default: 16).  It returns a
+list of hexdump lines.
 
 =head1 COMMAND-LINE INTERFACE
 

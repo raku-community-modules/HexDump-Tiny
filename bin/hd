@@ -1,9 +1,9 @@
-use HexDump::Tiny:ver<0.4>:auth<zef:raku-community-modules>;
+use HexDump::Tiny:ver<0.5>:auth<zef:raku-community-modules>;
 
 subset File of Str where { .IO.f };
 
 multi sub MAIN(File $file) {
-    .say for hexdump slurp $file;
+    .say for hexdump slurp $file, :bin;
 }
 
 multi sub MAIN(*@strings) {
@@ -12,7 +12,7 @@ multi sub MAIN(*@strings) {
 
 #| slurp from STDIN
 multi sub MAIN() {
-    .say for hexdump slurp;
+    .say for hexdump slurp :bin;
 }
 
 multi sub MAIN(Bool :$help!) is hidden-from-USAGE {
