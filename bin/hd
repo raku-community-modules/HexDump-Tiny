@@ -1,4 +1,4 @@
-use HexDump::Tiny:ver<0.3>:auth<zef:raku-community-modules>;
+use HexDump::Tiny:ver<0.4>:auth<zef:raku-community-modules>;
 
 subset File of Str where { .IO.f };
 

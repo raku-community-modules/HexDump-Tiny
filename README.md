@@ -21,6 +21,11 @@ HexDump::Tiny is module that exports a single subroutine `hexdump`.
 
 It takes a value of which to create a hexadecimal dump, and an optional named argument `:chunk-size` to indicate the number of bytes to be grouped (default: 16). It returns a list of hexdump lines.
 
+COMMAND-LINE INTERFACE
+======================
+
+This module also installs a `hd` command-line interface that allows one to do a hexdump of a file, or the parameters on the command line, or from STDIN (if no parameters are specified.
+
 AUTHOR
 ======
 

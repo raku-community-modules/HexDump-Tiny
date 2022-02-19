@@ -2,6 +2,11 @@ Revision history for HexDump-Tiny
 
 {{$NEXT}}
 
+0.4  2022-02-19T18:21:40+01:00
+    - Make sure we handle NFG correctly
+    - Show newline as ␤ and unprintables as ⋅ for better readability
+    - Document availability of "hd" script
+
 0.3  2022-02-19T12:51:58+01:00
     - Add "hd" CLI for easy hexdumping
 
