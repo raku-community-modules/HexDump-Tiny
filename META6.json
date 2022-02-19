@@ -1,18 +1,24 @@
 {
-    "perl" : "6.*",
-    "name" : "HexDump::Tiny",
-    "version" : "0.01",
-    "description" : "Generate hexadecimal dump of scalar values",
-    "depends" : [ ],
-    "build-depends" : [ ],
-    "test-depends" : [
-        "Test"
-    ],
-    "provides" :  {
-        "HexDump::Tiny" : "lib/HexDump/Tiny.pm"
-    },
-    "repo-type" : "git",
-    "source-url" : "git://github.com/raku-community-modules/HexDump-Tiny.git",
-    "author" : "Jonathan Scott Duff"
+  "auth": "zef:raku-community-modules",
+  "author": "Jonathan Scott Duff",
+  "build-depends": [
+  ],
+  "depends": [
+  ],
+  "description": "Generate hexadecimal dump",
+  "license": "Artistic-2.0",
+  "name": "HexDump::Tiny",
+  "perl": "6.*",
+  "provides": {
+    "HexDump::Tiny": "lib/HexDump/Tiny.rakumod"
+  },
+  "repo-type": "git",
+  "resources": [
+  ],
+  "source-url": "git://github.com/raku-community-modules/HexDump-Tiny.git",
+  "tags": [ "HEX", "HEXDUMP", "UTILITY"
+  ],
+  "test-depends": [
+  ],
+  "version": "0.2"
 }
-
