@@ -2,6 +2,12 @@ Revision history for HexDump-Tiny
 
 {{$NEXT}}
 
+0.6  2022-02-19T20:48:00+01:00
+    - Introduce :skip / :head named arguments
+    - Make sure these also work in the "hd" CLI
+    - hd: Make help page more understandable
+    - hd: Make sure help page is displayed on error
+
 0.5  2022-02-19T18:54:04+01:00
     - Accept Blob as input as well
     - Adapt slurping in hd to :bin for performance

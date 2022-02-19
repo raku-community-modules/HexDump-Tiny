@@ -1,6 +1,9 @@
 {
   "auth": "zef:raku-community-modules",
-  "author": "Jonathan Scott Duff",
+  "authors": [
+    "Jonathan Scott Duff",
+    "Elizabeth Mattijsen"
+  ],
   "build-depends": [
   ],
   "depends": [
@@ -23,5 +26,5 @@
   ],
   "test-depends": [
   ],
-  "version": "0.5"
+  "version": "0.6"
 }
